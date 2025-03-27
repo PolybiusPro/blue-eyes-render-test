@@ -10,17 +10,17 @@ const loadingManager = new THREE.LoadingManager();
 const textureLoader = new THREE.TextureLoader(loadingManager);
 //texure loader has optional callbacks corresponding to loadingManager methods
 const colorTexture = textureLoader.load(
-    '/textures/blue-eyes/blue-eyes-texture.jpg'
+    './textures/blue-eyes/blue-eyes-texture.jpg'
 );
 const backTexture = textureLoader.load(
-    '/textures/blue-eyes/card-back-texture.jpg'
+    './textures/blue-eyes/card-back-texture.jpg'
 );
 backTexture.center = new THREE.Vector2(0.5, 0.5);
 backTexture.rotation = Math.PI;
 backTexture.flipY = false;
 
 const alphaTexture = textureLoader.load(
-    '/textures/blue-eyes/blue-eyes-texture-alpha.jpg'
+    './textures/blue-eyes/blue-eyes-texture-alpha.jpg'
 );
 
 /**
