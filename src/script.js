@@ -12,12 +12,17 @@ const textureLoader = new THREE.TextureLoader(loadingManager);
 const colorTexture = textureLoader.load(
     './textures/blue-eyes/blue-eyes-texture.jpg'
 );
+colorTexture.generateMipmaps = false;
+colorTexture.minFilter = THREE.NearestFilter;
+
 const backTexture = textureLoader.load(
     './textures/blue-eyes/card-back-texture.jpg'
 );
 backTexture.center = new THREE.Vector2(0.5, 0.5);
 backTexture.rotation = Math.PI;
 backTexture.flipY = false;
+backTexture.generateMipmaps = false;
+backTexture.minFilter = THREE.NearestFilter;
 
 const alphaTexture = textureLoader.load(
     './textures/blue-eyes/blue-eyes-texture-alpha.jpg'
@@ -92,7 +97,7 @@ const camera = new THREE.PerspectiveCamera(
     100
 );
 
-camera.position.z = 1;
+camera.position.z = 1.5;
 scene.add(camera);
 
 // Controls
