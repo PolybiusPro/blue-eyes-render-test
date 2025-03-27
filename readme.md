@@ -1,4 +1,4 @@
-# Three.js Journey
+# Blue-Eyes Rendering Test w/ Three.js
 
 ## Setup
 
